@@ -1,0 +1,82 @@
+header {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    background-color: #D21311;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#logo{
+    width: 20%;
+    display: flex;
+
+}
+
+#carrinho{
+    width: 5%;
+}
+
+main{
+    border: 1rem;
+    width: 100%;
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fileira{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#produto{
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+#descricao{
+    display: flex;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #666060;
+    border-radius: 20px;
+    width: 40%;
+    overflow: hidden;
+    background-color: rgb(5, 5, 5);
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    flex: 1; 
+    outline: none;
+    background-color: black;
+}
+
+.search-button {
+    background-color: #756f6f;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #ddd;
+}
+
+#usuario{
+    width: 3.5%;
+}
