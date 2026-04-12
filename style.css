@@ -8,13 +8,29 @@ header {
 }
 
 #logo{
-    width: 20%;
+    width: 100%;
     display: flex;
 
 }
 
-#carrinho{
+#a_logo{
+    width: 20%;
+}
+
+#a_carrinho{
     width: 5%;
+}
+
+#carrinho{
+    width: 100%;
+}
+
+#a_usuario{
+    width: 3.5%;
+}
+
+#usuario{
+    width: 100%;
 }
 
 main{
@@ -64,6 +80,7 @@ main{
     flex: 1; 
     outline: none;
     background-color: black;
+    color: #fff;
 }
 
 .search-button {
@@ -77,6 +94,3 @@ main{
     background-color: #ddd;
 }
 
-#usuario{
-    width: 3.5%;
-}
