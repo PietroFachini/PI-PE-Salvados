@@ -164,3 +164,15 @@ nav{
     border: 2px;
     cursor: pointer;
 }
+
+#produto_carrinho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin: 1rem;
+    background-color: #fff;
+}
