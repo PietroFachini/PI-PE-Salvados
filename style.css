@@ -155,3 +155,12 @@ nav{
     justify-content: center;
 
 }
+
+#botao_add_carrinho{
+    height: 2rem;
+    border-radius: 7px;
+    color: black;
+    background-color: #D21311;
+    border: 2px;
+    cursor: pointer;
+}
