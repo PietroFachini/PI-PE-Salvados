@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
             <input type="text" name="q" placeholder="O que você está buscando?" class="search-input">
             <button type="submit" class="search-button">🔍</button>
         </form>
-        <a href="" id="a_carrinho">
+        <a href="/cart/cart.html" id="a_carrinho">
             <img src="/img/png-transparent-shopping-cart-icon-shopping-cart-black-design-trade-thumbnail-removebg-preview.png" alt="" id="carrinho">
         </a>
         <a href="/login/login.html" id="a_usuario">
@@ -24,20 +24,167 @@
         </a>
     </header>
     <main>
-        <div id="titulo">
-            <h1>Garrafa muito linda, olha essa garrafa</h1>
+        <div class="titulo">
+            <h1>Garrafa Stanley 750ml</h1>
         </div>
         <div id="fileira_info">
-            <img src="/img/garrafa.jpeg" alt="">
-            <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dui arcu, ornare a nunc vel, mollis sollicitudin libero. Donec malesuada augue et metus egestas, et porttitor magna pharetra. Donec eu lobortis nulla. Aenean at venenatis augue. Sed blandit nunc sem, ut porttitor risus tempor eu. Morbi tincidunt magna eget tincidunt consectetur. Integer pharetra vehicula felis sit amet tincidunt. Nunc vel lorem elit. Etiam sed nulla vel orci tempor cursus in nec libero. Sed vulputate, mi eu mattis pretium, est turpis suscipit lectus, nec efficitur sem ante eu est.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dui arcu, ornare a nunc vel, mollis sollicitudin libero. Donec malesuada augue et metus egestas, et porttitor magna pharetra. Donec eu lobortis nulla. Aenean at venenatis augue. Sed blandit nunc sem, ut porttitor risus tempor eu. Morbi tincidunt magna eget tincidunt consectetur. Integer pharetra vehicula felis sit amet tincidunt. Nunc vel lorem elit. Etiam sed nulla vel orci tempor cursus in nec libero. Sed vulputate, mi eu mattis pretium, est turpis suscipit lectus, nec efficitur sem ante eu est.
-            </h4>
+            <img src="/img/garrafa.jpeg" alt="" id="img_info">
         </div>
-        <h1>R$27,50</h1>
-        <a href="">
-            <button id="botao_add_carrinho"><b>Adicionar ao Carrinho</b></button>
-        </a>
+        <div class="produto_info">
+            <div>
+                <h1>R$27,50 <br></h1>
+                <p>ou até 5 x 5,50 <br></p>
+                <p>Selecione a quantidade:</p>
+                <input type="number" min="1"><br>
+                <br>
+                <button class="botao_add_carrinho"><b>Adicionar ao Carrinho</b></button>
+            </div>
+        </div>
+        <div class="produto_info">
+            <div>
+                <h1>Calcular prazo:<br></h1>
+                <input type="number" placeholder="88495000"><br>
+                <br>
+                <button class="botao_add_carrinho"><b>Calcular prazo de entrega</b></button>
+                <p><br><b>Entre 34 de Abril e 1 de Janeiro para 88495-000</b></p>
+            </div>
+        </div>
+        <hr>
+        <div class="titulo">
+            <h1>Descrição:</h1>
+        </div>
+        <h2>Garrafa térmica prática e resistente, ideal para acompanhar sua rotina em qualquer lugar. Produzida pela Stanley, ela combina durabilidade com um design moderno na cor azul marinho, garantindo estilo e funcionalidade.</h2>
+        <br>
+        <h3>
+            Fabricada em aço inoxidável de alta qualidade, é perfeita para manter suas bebidas geladas ou quentes por mais tempo. Possui tampa com vedação segura, evitando vazamentos, e alça integrada que facilita o transporte no dia a dia — seja na academia, no trabalho, em viagens ou atividades ao ar livre.
+        </h3>
+        <br>
+        <h3>
+            Além disso, é livre de BPA, fácil de limpar e projetada para suportar o uso intenso, sendo uma excelente escolha para quem busca praticidade e longa vida útil.
+        </h3>
+        <br>
+        <h2>Destaques:</h2>
+        <br>
+        <ul>
+            <li><h3>Material resistente em aço inoxidável;</h3></li>
+            <li><h3>Conserva a temperatura por horas;</h3></li>
+            <li><h3>Tampa com vedação eficiente;</h3></li>
+            <li><h3>Alça para transporte;</h3></li>
+            <li><h3>Design moderno e elegante.</h3></li>
+        </ul>
+        <br>
+        <h3>Uma opção confiável para quem valoriza qualidade e desempenho em todos os momentos.</h3>
+        <br>
+
+        <hr>
+        <div class="titulo">
+            <h1>Formas de pagamento:</h1>
+        </div>
+        <div id="fileira">
+            <a href="">
+                <div class="produto">
+                    <div class="titulo">
+                        <h2>Pix</h2>
+                    </div>
+                    <img src="/img/PIX.jpg" alt="">
+                </div>
+            </a>
+
+            <a href="">
+                <div class="titulo">
+                        <h3>Boleto</h3>
+                    </div>
+                <div class="produto">
+                    <img src="/img/boleto.png" alt="">
+                </div>
+            </a>
+
+            <a href="">
+                <div class="titulo">
+                    <h3>Débito</h3>
+                </div>
+                <div class="produto">
+                    <img src="/img/debito.png" alt="">
+                </div>
+            </a>
+            
+            <div>
+                <div class="titulo">
+                        <h3>Crédito</h3>
+                    </div>
+                <div class="produto">
+                    <img src="/img/credito.jpg" alt=""><br>
+                    <label>Escolha quantas parcelas:</label><br>
+                    <select>
+                        <option>1x27,50</option>
+                        <option>2x13,75</option>
+                        <option>3x9,17</option>
+                        <option>4x6,90</option>
+                        <option>5x5,50</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="titulo">
+            <h1>Avaliações:</h1>
+        </div>
+        <br>
+        <br>
+        <div class="produto_info">
+            <img src="/img/comentario.png" alt="">
+            <h1>Pedro Henrique Viera</h1>
+            <div  class="texto_comentario">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p><u>03/04/26</u></p>
+                <br>
+                <p>
+                    a garrafa é extremamente robusta. Dá pra sentir que o material é de alta qualidade, com aço inoxidável bem resistente. Já deixei cair algumas vezes (sem querer 😅) e não aconteceu absolutamente nada — nem amassado, nem perda de eficiência. Nesse ponto, ela realmente entrega o que a marca promete: durabilidade acima da média.
+                </p>
+                <p>
+                    Em relação ao isolamento térmico, é onde ela mais se destaca. Mantém bebidas quentes por muitas horas — no meu caso, café ficou quente por praticamente o dia inteiro.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="produto_info">
+            <img src="/img/comentario.png" alt="">
+            <h1>Pietro Fachini Soares</h1>
+            <div  class="texto_comentario">
+                <p><u>12/04/26</u></p>
+                <br>
+                <p>⭐⭐⭐⭐</p>
+                <p>
+                    A bicha é boa mesmo👍. Só não dou 5 por que a vida não é um morango.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="produto_info">
+            <img src="/img/comentario.png" alt="">
+            <h1>Arthur Dylan</h1>
+            <div  class="texto_comentario">
+                <p>⭐⭐⭐</p>
+                <p><u>12/03/26</u></p>
+                <br>
+                <p>
+                    Não posso avaliar pois levo aos meus treinos de basquete e todos bebem nela menos eu. <br> Não sei nem a temperatura da água🥺.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="produto_info">
+            <img src="/img/comentario.png" alt="">
+            <h1>Tata</h1>
+            <div  class="texto_comentario">
+                <p>⭐</p>
+                <p><u>01/03/26</u></p>
+                <br>
+                <p>
+                    Não chegou. QUERO MEU DINHEIRO DE VOLTA!!!
+                </p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
