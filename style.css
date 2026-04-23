@@ -50,7 +50,7 @@ main{
     justify-content: center;
 }
 
-#produto{
+.produto{
     display: block;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -104,7 +104,7 @@ main{
     margin: 1rem;
     background-color: #fff;
     width: 50%;
-    height: 30rem;
+    height: 40rem;
 }
 
 #login_main{
@@ -130,7 +130,7 @@ input{
     width: 40rem;
 }
 
-#input_login{
+.input_login{
     margin-bottom: 2rem;
 }
 
@@ -140,7 +140,7 @@ input{
     border-radius: 7px;
 }
 
-#titulo{
+.titulo{
     display: flex;
     justify-content: center;
 }
@@ -153,14 +153,50 @@ nav{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-direction: row;
 
 }
 
-#botao_add_carrinho{
+.botao_add_carrinho{
     height: 2rem;
     border-radius: 7px;
     color: black;
     background-color: #D21311;
     border: 2px;
     cursor: pointer;
+}
+
+.produto_carrinho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+.produto_info{
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+ul{
+    list-style-type: disc;
+}
+
+.texto_comentario{
+    display: flex;
+    flex-direction: column;
+}
+
+#img_info{
+    width: 30%;
 }

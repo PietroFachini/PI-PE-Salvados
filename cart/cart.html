@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html" id="a_logo">
+            <img src="/img/top_imagem.png" alt="" id="logo">
+        </a>
+        
+        <form action="/search" method="get" class="search-box">
+            <input type="text" name="q" placeholder="O que você está buscando?" class="search-input">
+            <button type="submit" class="search-button">🔍</button>
+        </form>
+        <a href="" id="a_carrinho">
+            <img src="/img/png-transparent-shopping-cart-icon-shopping-cart-black-design-trade-thumbnail-removebg-preview.png" alt="" id="carrinho">
+        </a>
+        <a href="/login/login.html" id="a_usuario">
+            <img src="/img/456348.png" alt="" id="usuario">
+        </a>
+    </header>
+    <main>
+        <h1>Itens do seu carrinho:</h1>
+        <div class="produto_carrinho">
+            <img src="/img/garrafa.jpeg" alt="">
+            <h1>Garrafa térmica Stanley</h1>
+            <h2>R$27,50</h2>
+        </div>
+        <p>Quantidade: 2</p>
+        <p>Total: R$55,00</p>
+        <div class="produto_carrinho">
+            <img src="/img/luminaria.jpg" alt="">
+            <h1>luminaria</h1>
+            <h2>R$300,00</h2>
+        </div>
+        <p>Quantidade: 1</p>
+        <p>Total: R$300,00</p>
+        <div class="produto_carrinho">
+            <img src="/img/fone_de_ouvido_bluetooth_airbuds.png" alt="">
+            <h1>Fone de ouvido bluetooth</h1>
+            <h2>R$80,00</h2>
+        </div>
+        <p>Quantidade: 2</p>
+        <p>Total: R$160,00</p>
+        <hr>
+        <p><b>Total da compra(Antes do frete):</b></p>
+        <p><b>R$515,00</b></p>
+        <div id="produto_info">
+            <div id="preco_info">
+                <h1>Calcular frete:<br></h1>
+                <input type="number" placeholder="88495000"><br>
+                <br>
+
+                <button class="botao_add_carrinho"><b>Calcular valor do frete</b></button>
+                
+                <p><br><b>R$27,80 para 88495-000</b></p>
+            </div>
+        </div>
+        <br>
+        <button class="botao_add_carrinho"><b>Finalizar compra</b></button>
+    </main>
+</body>
+</html>
