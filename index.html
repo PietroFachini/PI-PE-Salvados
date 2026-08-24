@@ -11,10 +11,10 @@
         <a href="" id="a_logo">
             <img src="img/top_imagem.png" alt="" id="logo">
         </a>
-        
-        <form action="/search" method="get" class="search-box">
-            <input type="text" name="q" placeholder="O que você está buscando?" class="search-input">
+            <form action="/search" method="get" class="search-box">
+            <input type="text" name="q" placeholder="O que você está buscando?" autocomplete="off" class="search-input" id="busca">
             <button type="submit" class="search-button">🔍</button>
+            <ul id="sugestoes"></ul>
         </form>
         <a href="/cart/cart.html" id="a_carrinho">
             <img src="img/png-transparent-shopping-cart-icon-shopping-cart-black-design-trade-thumbnail-removebg-preview.png" alt="" id="carrinho">
@@ -44,7 +44,7 @@
             </div>
             <div class="produto">
                 <img src="img/teclado.png" alt="">
-                <p>Teclado mecanico</p>
+                <p>Teclado mecânico</p>
                 <h2>R$280,50</h2>
             </div>
             <div class="produto">
@@ -62,5 +62,45 @@
     <footer>
         
     </footer>
+    <script>
+        const produtos = [
+            "Garrafa térmica Stanley",
+            "Tenis Adidas",
+            "Fone de ouvido bluetooth",
+            "Luminaria",
+            "Air fryer",
+            "Teclado mecânico"
+        ]
+        const inputBusca = document.getElementById("busca");
+        const listabusca = document.getElementById("sugestoes");
+
+        inputBusca.addEventListener("input", function(){
+            const entrada = this.value.toLowerCase();
+            listabusca.innerHTML = "";
+
+            if (!entrada) return;
+
+            const encontrado = produtos.filter(produto => produto.toLowerCase().includes(entrada)
+            );
+
+            encontrado.forEach(produto => {
+                const item = document.createElement("li");
+                item.textContent = produto;
+
+                item.addEventListener("click", function(){
+                    inputBusca.value = produto;
+                    listabusca.innerHTML = "";
+                });
+
+                listabusca.appendChild(item);
+            })
+        })
+
+        document.addEventListener("click", function(e){
+            if (e.target !== inputBusca){
+                listabusca.innerHTML = "";
+            }
+        })
+    </script>
 </body>
 </html>

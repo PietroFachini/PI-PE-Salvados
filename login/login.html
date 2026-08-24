@@ -36,12 +36,38 @@
                     <input type="password" id="password">
                 </div>
                 <div class="button">
-                    <button type="submit" id="botao">Entrar</button><br>
+                    <button type="button" id="botao">Entrar</button><br>
                     <a href="/sign_up/sign_up.html">Não tem conta?</a>
                 </div>
             </form>
+            <div id="alerta"></div>
         </div>
     </main>
     <footer></footer>
+    <script>
+        const alerta = document.getElementById("alerta");
+        const login = document.getElementById("user");
+        const senha = document.getElementById("password");
+        const botao = document.getElementById("botao")
+
+        botao.addEventListener("click", function(){
+            if (login.value == "" && senha.value == ""){
+                alerta.textContent = "Usuário e senha vazios, favor preencher corretamente!"
+            }
+            else if (login.value == ""){
+                alerta.textContent = ""
+                alerta.textContent = "Usuário vazio, favor preencher corretamente!"
+            }
+            else if (senha.value == ""){
+                alerta.textContent = ""
+                alerta.textContent = "Senha vazia, favor preencher corretamente!"
+            }
+            else {
+                alerta.textContent = ""
+            }
+        })
+        
+
+    </script>
 </body>
 </html>
